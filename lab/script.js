@@ -3,7 +3,7 @@ myHeaders.append ("Cookie",
 	"CSRF3-Token=1682291497.n8n@TBaEUmNf5xq1;__204u=8269057204-1681427497401");
 
 var requestoptions = {
-	method: 'GET' ,
+	method: 'PUT' ,
 	headers: myHeaders
 	redirect: 'follow '
 };
