@@ -1,0 +1,49 @@
+
+@media print {
+	BODY {
+	}
+}
+
+@media screen {
+	BODY {
+		font-size: 100%;
+		background-color: #1ba11c;
+	}
+
+	#walter h1 {
+		color: white;
+		font-size: 112px;
+		margin: 0;
+		padding-top: 20px;
+	}
+
+	#walter h3 {
+		color: yellow;
+		font-size: 40px;
+		margin: 0;
+		font-family: Comic Sans,Comic Sans MS,cursive;
+	}
+
+	p {
+		color: yellow;
+		font-size: 20px;
+		font-weght: bold;
+		font-family: Comic Sans,Comic Sans MS,cursive;
+	}
+
+	tr {
+		color: yellow;
+		font-size: 20px;
+		font-weght: bold;
+		font-family: Comic Sans,Comic Sans MS,cursive;
+	}
+
+	.bigger {
+		font-size: 2em;
+	}
+}
+
+
+
+
+
