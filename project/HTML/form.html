@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form registration</title>
+    <link rel="stylesheet" href="../CSS/form.css" media="screen">
+</head>
+<body>
+   <form id="registration">
+        <fieldset>      <!--для логічного угруповання об'єктів-->
+            <legend>Форма реєстрації</legend>       <!--визначає заголовок-->
+
+            <table class="alignment">
+                <tr>
+                    <td><label for=fio>ПІБ</label></td>
+                    <td><input id=fio type=text required minlength="12"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input id="email" type="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Номер телефону</label></td>
+                    <td><input id="phone" type="tel" required pattern="^\+38\(0[^0-4]\d\) \d{3}( \d{2}){2}$"></td>
+                </tr>
+                <tr>
+                    <td><label for="date-of-birth">Дата народження</label></td>
+                    <td><input id="date-of-birth" type="date"></td>
+                </tr>
+            </table>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Параметри доставки</legend>
+
+            <table>
+                <tr>
+                    <td><label for="adress">Адреса</label></td>
+                    <td><textarea id="adress" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="postcode">Поштовий індекс</label></td>
+                    <td><input id="postcode" type="text" pattern="^\d{5}$"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Уподобаний спосіб отримання повідомлень</legend>
+            <table>
+                <tr>
+                    <td><input id="email-message" name=message type="radio"></td>
+                    <td><label for="email-message">По Email</label></td>
+                </tr>
+                <tr>
+                    <td><input id="phone-message" name=message type="radio"></td>
+                    <td><label for="phone-message">По телефону</label></td>
+                </tr>
+                <tr>
+                    <td><input id="no-message" name=message type="radio"></td>
+                    <td><label for="no-message">Не повідомляти мене</label></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Надіслати дані</button>
+        </fieldset>
+   </form>
+
+</body>
+</html>
